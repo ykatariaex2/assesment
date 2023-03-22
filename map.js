@@ -94,7 +94,7 @@ document.getElementById('submit').addEventListener(('click'),async(event)=>{
 // console.log('hello')
 const cont=document.getElementById('pets').value;
 
-const value= await fetch(`http://localhost:8000/${cont}`);
+const value= await fetch(`https://ElderlyTemptingFlatassembler.yashika-kataria.repl.co/${cont}`);
 const data=await value.json() 
 
 // console.log(data)
@@ -171,7 +171,7 @@ document.getElementById('submit2').addEventListener(('click'),async(event)=>{
 
   console.log('hello2')
   const country=document.getElementById('pets1').value;
-  const value= await fetch(`http://localhost:8000/country/${country}`);
+  const value= await fetch(`https://ElderlyTemptingFlatassembler.yashika-kataria.repl.co/country/${country}`);
 
   const data=await value.json() 
   let location=data.location;
@@ -241,7 +241,7 @@ location.map(async (items)=>
 
 
 async function fetchdata(){
-  const value= await fetch(`http://localhost:8000`);
+  const value= await fetch(`https://ElderlyTemptingFlatassembler.yashika-kataria.repl.co`);
   const data=await value.json()  
   console.log(data)
   let location=data.location;
