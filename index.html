@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <title>Add custom markers in Mapbox GL JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./css/map.css">
+</head>
+<body>
+<div class="new">
+    <!-- <label for="language" id="text" >Select a country:</label>
+    <select name="language" id="language">
+      <option value="javascript">Mexico</option>
+      <option value="python">Python</option>
+      <option value="c++" disabled>C++</option>
+      <option value="java" selected>Java</option>
+    </select>!-->
+
+
+
+<!--   <label for="language" id="text" >Select a continent:</label>
+    <select name="language" id="language">
+      <option value="javascript">Mexico</option>
+      <option value="python">Python</option>
+      <option value="c++" disabled>C++</option>
+      <option value="java" selected>Java</option>
+    </select> !-->
+    <div id="container"></div>
+
+    <div>
+      <button id="generate" class="button"> countries</button>
+      <button id="generate2" class="button"> continent</button>
+      <button id="submit" class="button">plot by continent</button>
+      <button id="submit2" class="button">plot by country</button>
+    </div>
+
+    <div id='map'>
+    </div>
+<!-- <div class="map-overlay">
+    <fieldset>
+    <input id="feature-filter" type="text" placeholder="Filter results by name">
+    </fieldset>
+    <div id="feature-listing" class="listing"></div>
+</div> -->
+
+<script src="./js/map.js"></script>
+
+</body>
+</html>
